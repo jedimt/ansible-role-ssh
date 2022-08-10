@@ -1,5 +1,6 @@
 galaxy_info:
-  author: Aaron Patten
+  author: jedimt
+  role_name: ssh_update_known_hosts
   description: Update known_hosts file
 
   license: MIT
@@ -13,8 +14,7 @@ galaxy_info:
         - xenial
         - jammy
 
-  galaxy_tags: 
+  galaxy_tags:
     - ssh
-    - known_hosts
 
 dependencies: []
