@@ -1,5 +1,4 @@
 ---
-# vars file for playbooks/ssh/update_known_hosts
+# vars file for jedimt.ssh
+
 ssh_known_hosts_command: "ssh-keyscan -T 10"
-ssh_known_hosts_file: "{{ lookup('env','HOME') + '/.ssh/known_hosts' }}"
-ssh_known_hosts: "{{ groups['servers'] }}"

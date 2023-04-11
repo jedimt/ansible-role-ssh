@@ -1,6 +1,7 @@
 ---
 
-# tasks file for nebulon.ssh_update_known_hosts
+# tasks file for jedimt.ssh
+
 - name: For each host, scan for its ssh public key
   ansible.builtin.shell: "ssh-keyscan {{ item }},`dig +short {{ item }}`"
   with_items: "{{ ssh_known_hosts }}"

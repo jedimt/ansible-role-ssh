@@ -29,14 +29,13 @@ Example Playbook
     # Update Ansible controller SSH keys
     # ===========================================================================
     - name: Update SSH keys for Ansible controller known_hosts
-    hosts: localhost
-    connection: local
-    gather_facts: false
-    become: false
-    tags: play_ssh_sync
+      hosts: localhost
+      connection: local
+      gather_facts: false
+      become: false
 
-    roles:
-        - ansible-role-ssh-update-known-hosts
+      roles:
+        - jedimt.ssh
 
 License
 -------

@@ -1,7 +1,7 @@
 galaxy_info:
   author: jedimt
-  role_name: ssh_update_known_hosts
-  description: Update known_hosts file
+  role_name: ssh
+  description: Update SSH known_hosts file
 
   license: MIT
 
